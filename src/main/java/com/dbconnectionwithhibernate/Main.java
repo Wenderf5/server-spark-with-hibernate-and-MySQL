@@ -9,7 +9,7 @@ public class Main {
         try {
             port(8080);
             Routes.start();
-            System.out.println("Server is running on port 8080!");
+            System.out.println("Server is running on port 8080");
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
