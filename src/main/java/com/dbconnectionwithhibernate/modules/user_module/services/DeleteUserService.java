@@ -35,6 +35,8 @@ public class DeleteUserService {
             JsonObject responseJson = new JsonObject();
             responseJson.addProperty("message", "Erro ao apagar usuário!");
             return responseJson;
+        } finally {
+            factory.close();
         }
     }
 }
